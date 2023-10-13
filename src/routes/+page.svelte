@@ -1,2 +1,6 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+
+<h1>One Shore</h1>
+<p>This site is under construction</p>
+
+<p>Visit <a href="https://one-shore.com">oneshore.com</a> for the production version.</p>
+
