@@ -81,15 +81,6 @@ footer {
 	color: white;
 }
 	
-h1, h2, h3 {
-	margin: 0;
-	padding: 0;
-	font-family: verdana, sans-serif;
-	font-weight: 500;
-	letter-spacing: 0.05em;
-}
-	
-	
 main {
 	background-image: url("/greatwave-clipped-25.png");
 	background-repeat: no-repeat;
@@ -102,33 +93,45 @@ main {
 	align-items: flex-end;
 }
 	
-	a {
+a {
 	color: var(--oneshore-blue);
 	text-decoration: none;
-	}
-	
-	a:hover {
+}
+
+a:hover {
 	text-decoration: underline;
-	}
-	
-	
-	h1 {
+}
+
+
+h1, h2, h3, h4 {
+	margin: 0;
+	padding: 0;
+	font-family: verdana, sans-serif;
+	font-weight: 500;
+	letter-spacing: 0.05em;
+}
+
+h1 {
 	font-size: 2em;
-	}
-	
-	h2 {
+}
+
+h2 {
 	font-size: 1.5em;
-	}
-	
-	h3 {
+}
+
+h3 {
 	font-size: 1.25em;
-	}
-	
-	
-	button {
+}
+
+h4 {
+	font-size: 1.1em;
+}
+
+
+button {
 	font-size: inherit;
 	--border-width: 2px;
-	
+
 	border-width: var(--border-width);
 	border-style: solid;
 	border-radius: 2px;
@@ -138,14 +141,15 @@ main {
 	background-color: #36A;
 	margin: var(--border-width);
 	transition: ease-in-out 0.5s;
-	}
-	
-	button:hover {
+}
+
+button:hover {
 	color: var(--oneshore-blue);
 	background-color: white;
-	}
-	
-	input, select, textarea {
+}
+
+input, select, textarea {
+	font-family: inherit;
 	font-size: inherit;
 	
 	--border-width: 2px;
@@ -157,34 +161,44 @@ main {
 	padding: 0.2em 0.4em;
 	
 	background-color: #f3f3f3;
-	}
-	
-	input::placeholder {
-	color: #AAAAAA; 
-	 }
-	 
+}
 
+input::placeholder {
+	color: var(--oneshore-medium);
+}
 
-	#hero {
-		padding: 1em;
-		display: block;
-		background-color: rgb(10,10,10,0.75);
-		color: white;
-		/* border: 5px dashed white; */
-	}
+input:focus::placeholder{
+    opacity: 25%;
+}
 
-	#header-2 {
+textarea::placeholder {
+	color: var(--oneshore-medium);
+}
+
+textarea::focus::placeholder {
+	opacity: 25%;
+}
+
+#hero {
+	padding: 1em;
+	display: block;
+	background-color: rgb(10,10,10,0.75);
+	color: white;
+	/* border: 5px dashed white; */
+}
+
+#header-2 {
 	font-size: 0.9rem;
 	border: 1px dotted blueviolet;
-	}
-	
-	
-	#header-3 {
+}
+
+
+#header-3 {
 	border: 1px dotted turquoise;
 	display: none;
-	}
-	
-	#header-4 {
+}
+
+#header-4 {
 	border: 4px dotted tan;
 	font-size: 0.9rem;
 	
@@ -192,16 +206,16 @@ main {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	}
-	
-	.search-form {
+}
+
+.search-form {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	border: 1px dotted gray;
-	}
-	
-	.search-button  {
+}
+
+.search-button  {
 	margin: 0;
 	border: 0;
 	padding: 0.1em;
@@ -213,12 +227,22 @@ main {
 	display: flex;
 	
 	transition: ease-in-out 0.5s;
+}
+
+.search-button:hover {
+	background-color: var(--oneshore-blue);
+	color: white;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+	header {
+		padding: 0.5rem;
 	}
-	
-	.search-button:hover {
-	 background-color: var(--oneshore-blue);
-	 color: white;
+
+	footer {
+		padding: 0;
 	}
-	
-	
-	
+
+}
