@@ -34,6 +34,7 @@
 			align-items: center;
 			
 
+			// li {
 			li:not(:first-of-type) {
 				display: inline;
 				

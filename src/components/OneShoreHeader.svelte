@@ -112,11 +112,12 @@
 					flex-direction: column;
 					align-items: flex-end;
 
-					background-color: var(--oneshore-blue);
-					color: white;
+					// background-color: var(--oneshore-blue);
+					// color: white;
+					// color: var(--oneshore-dark);
 
 					a {
-						color: white;
+						// color: white;
 						padding-right: 0.5em;
 					}
 					

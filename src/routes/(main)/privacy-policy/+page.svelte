@@ -1,5 +1,5 @@
 <script>
-	import Breadcrumbs from "../../components/Breadcrumbs.svelte";
+	import Breadcrumbs from "../../../components/Breadcrumbs.svelte";
 	
 	let homePage = { name:"home", path:'/' };
 	let currentPage = { name: "privacy policy", path: "/privacy-policy" };

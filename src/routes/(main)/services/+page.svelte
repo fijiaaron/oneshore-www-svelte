@@ -1,6 +1,6 @@
 <script>
 	import { page } from "$app/stores";
-	import Breadcrumbs from "../../components/Breadcrumbs.svelte";
+	import Breadcrumbs from "../../../components/Breadcrumbs.svelte";
 	
 	let homePage = { name:"home", path:'/' };
 	let currentPage = { name: "services", path: "/services" };
